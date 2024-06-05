@@ -2,16 +2,9 @@ import java.util.function.Function;
 
 public class ClosureSample {
 
-  Function<Integer, Integer> add (final int x) {
-    var partial = new Function<Integer,Integer>() {
-      @Override
-      public Integer apply(Integer y) {
-        return x + y;
-      }
-    };
-    return partial;
+  Function<Integer, Integer> add(final int x)  {
+    return y -> x + y;
   }
-
   public static void main(String[] args) {
     ClosureSample sample = new ClosureSample();
 
