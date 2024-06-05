@@ -8,7 +8,12 @@ public class FactorialSample {
     return result;
   }
 
+  static long factorialRec(long num) {
+    return num == 1 ? 1 : num * factorialRec(num - 1);
+}
+
+
   public static void main(String[] args) {
-    System.out.println(factorial(20));
+    System.out.println(factorialRec(20));
   }
 }
