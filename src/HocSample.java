@@ -15,7 +15,6 @@ public class HocSample {
     System.out.println(list);
     var out = mapForEach(list, it -> it.length());
     System.out.println(out);
-
   }
 
   static <T, S> ArrayList<S> mapForEach(List<T> arr, Function<T, S> fn) {
